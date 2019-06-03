@@ -21,8 +21,11 @@ class Show < ActiveRecord::Base
   end
   
   def self.popular_shows
-    # arr = []
-    Show.all.map{|s| s.rating > 5}
+    arr = []
+    Show.all.each do |s|
+      if s.rating > 5
+        arr << s 
+    end
   end
   
 end

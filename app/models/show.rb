@@ -27,6 +27,7 @@ class Show < ActiveRecord::Base
         arr << s
       end
     end
+    arr
   end
   
 end

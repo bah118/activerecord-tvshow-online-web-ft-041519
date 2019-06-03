@@ -22,7 +22,7 @@ class Show < ActiveRecord::Base
   
   def self.popular_shows
     # arr = []
-    self.all.collect{|s| s.rating > 5}
+    Show.all.map{|s| s.rating > 5}
   end
   
 end

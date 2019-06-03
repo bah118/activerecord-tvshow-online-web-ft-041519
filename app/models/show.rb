@@ -5,7 +5,10 @@ class Show < ActiveRecord::Base
   
   def self.most_popular_show
     # popular = highest_rating
-    Show.find_by(rating = highest_rating)
+    
+    
+    
+    Show.all.each{|s| s.rating = highest_rating
   end
   
   

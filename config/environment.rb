@@ -1,6 +1,7 @@
 require "bundler/setup"
 require 'yaml'
 require 'active_record'
+require_all 'app'
 
 Bundler.require
 
@@ -16,4 +17,3 @@ if ENV["ACTIVE_RECORD_ENV"] == "test"
   ActiveRecord::Migration.verbose = false
 end
 
-require_all 'app'

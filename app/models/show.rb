@@ -24,7 +24,8 @@ class Show < ActiveRecord::Base
     arr = []
     Show.all.each do |s|
       if s.rating > 5
-        arr << s 
+        arr << s
+      end
     end
   end
   
